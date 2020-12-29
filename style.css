@@ -1,0 +1,94 @@
+header {
+border-width: 9px;
+border-style: groove;
+border-color:blue;
+    background-color: aqua;
+}
+strong {
+         
+         font-size :200px;
+}
+ b{
+font-size :50px;
+}
+h2{
+font-size :50px;
+}
+li{
+font-size :30px;
+border-width: 9px;
+border-style: ridge;
+border-color:black;
+background-color:orange;
+}
+
+h1{
+border-width: 25px;
+border-style: groove;
+border-color:blue;
+background-color:gold;
+font-size: 50px;
+text-shadow: 10px 10px 10px 
+black;
+}
+h2{
+border-width: 9px;
+border-style: groove;
+border-color:blue;
+    backgro
+background-color:black;
+}
+body{
+color:brown;
+font-size: 30px;
+}
+p{
+font: italicfont small-caps bolder 35px arial, sans-serrif ;
+}
+img{
+border-width: 5px;
+border-style: groove;
+border-color:yellow;
+}
+*{
+box-sizing:border-box;
+}
+/* Style the header*/
+.header{
+text-align:centre;
+}
+/* Style the top navigation bar
+*/
+.navigation{
+overflow: auto;
+background-color:pink;
+}
+/* Style the  navigation links */
+.navigation a {
+float: left;
+display: white ;
+color: red;
+text-align: center;
+padding: 14px 16px ;
+}
+/* Change color on hover */
+.navigation a:hover {
+background-color:black;
+color: red;
+}
+#background-image{
+float:left;
+}
+table{
+border: 5px solid blue;
+width: 100%;
+}
+th,td{
+border: 5px solid blue;
+}
+form{
+border: 5px solid red;
+}
+.btn{
+font-size: 30px;
+}

@@ -23,22 +23,26 @@ h2{
 font-size :50px;
 }
 li{
-font-size :25px;
+font-size :30px;
 border-width: 9px;
 border-style: ridge;
 border-color:black;
 background-color:orange;
+ border-radius: 30px;
+ border-spacing: inherit;
+    padding-right: .6em;
+margin: 1em 0;
 }
 
 h1{
 border-width: 23px;
 border-style: groove;
-border-color:blue;
-background-color:gold;
+border-color: blue;
 font-size: 50px;
 text-shadow: 11px 11px 11px black;
-    font: bold small-caps bolder 35px arial, sans-serrif ;
-    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBNTEdVlKrJWKP-iYtnKY5E9ghioia_EtCVvOzyTXx853PHMSvLgmcOfffe3RFzpRyeTL9HjI55w9mQE2g3C8AyM1glfHdUt_rgg&usqp=CAU&ec=45750089) repeat center ;
+font: bold small-caps bolder 35px arial, sans-serrif ;
+background: url(https://1.bp.blogspot.com/-dgH6iWe92Eg/V_YlbxgdMHI/AAAAAAAAAUw/qHcNVa7IiOETJ7Pi0A2_XNtYnQCcYqIewCLcB/s1600/4K%2BWallpapers%2B2.jpg) ;
+    border-radius: 30px;
 }
 h2{
 border-width: 9px;
@@ -53,15 +57,21 @@ body{
 color:black;
 font-size: 30px;
     background-color:silver;
-    background: url(https://png.pngtree.com/thumb_back/fh260/background/20191113/pngtree-abstract-wallpaper-desktop-design-image_321812.jpg);
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Y7lCzBp-lL-0IcBTk6SAZvb8ac6UZLTW5VqdHEW-c569Tr0ztRgYuMQ66KRZcXwlg1j4SHVoxsG5QTLfQzSa9Qwy7LNTFIYgXw&usqp=CAU&ec=45750089);
 }
 p{
 font: italicfont small-caps bolder 35px arial, sans-serrif ;
+    border-style: groove;
+    border-width: 5px;
+    border-color: deeppink;
+    border-radius: 25px;
+    background-color: pink;
 }
 img{
 border-width: 5px;
 border-style: groove;
 border-color:yellow;
+    border-radius: 30px;
 }
 *{
 box-sizing:border-box;
@@ -98,10 +108,12 @@ width: 100%;
 }
 th,td{
 border: 5px solid blue;
+    
 }
 form{
 border: 15px solid red;
     background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg);
+    border-radius: 25px;
 }
 # background-image
 {
@@ -127,14 +139,63 @@ color:yellow;
     section{
         border: 15px solid blue;
         background: url(https://img.freepik.com/free-vector/abstract-halftone-background_23-2148583453.jpg?size=626&ext=jpg);
+        border-radius: 25px;
     }
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown-content a:hover {background-color: green;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: none;}
+    .header{
+    font-size: 15px;
+    border-radius: 0px;
+        background-color: black;
+    }
+    .bg {
+  /* The image used */
+   background-image: url("https://wallpaperaccess.com/full/516010.jpg");
+  /* Full height */
+  height: 100%; 
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+ 
 </style>
 </head>
 <body>
-    <script>
-        a = new Date();
-        a.getHours()
-    </script>
+    <div class="bg">
     <nav class="navbar navbar-inverse navar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -146,26 +207,63 @@ color:yellow;
         <a href="#" class="navbar-brand"><img src ="https://www.crushpixel.com/big-static13/preview4/creative-idea-concept-light-bulb-1194209.jpg" class=" img-circle" height="50px" width="50px" align="left"> <b>SBS Group of Technology.</b><br><b> Be Creative , Be Happy</b></a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
+           
         <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span> Home</a></li>
-             <li ><a href="file:///C:/Users/gm/Documents/Untitled-1.html" target="_blank"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-             <li ><a href="file:///C:/Users/gm/Documents/Untitled-2.html" target="_blank"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
-            
+             <div class="dropdown">
+            <li class="header"><a href="#come"><button class="dropbtn"><span class="glyphicon glyphicon-home"></span> Home</button></a> </li>
+                 <div class="dropdown-content">
+    <a href="#T1">INFORMATION</a>
+           <a href="file:///C:/Users/gm/Documents/index.html/e-commerce.html" target="_blank">BUY</a>
+    <a href="#registration">TRAINING</a>
+</div>
+                 </div>
+            <div class="dropdown">
+            <li class="header"><a href="#T1"><button class="dropbtn"><span class="glyphicon glyphicon-new-window"></span>Technology</button></a></li>
+                <div class="dropdown-content">
+                    <a href="#">IT</a>
+                    <a href="#">Networks</a>
+                    <a href="#">Sensors</a>
+                    <a href="#">IOT</a>
+                    <a href="#">Transport</a>
+                    <a href="#">Energy</a>
+                    <a href="#">Agriculture</a>
+                    <a href="#">Architecture</a>
+                    <a href="#">Entertainment and Media</a>
+                    <a href="#">Art and Music</a>
+                    <a href="#">Appiances</a>
+                    <a href="#">Industrial Machines</a>
+                    <a href="#">Clothing and Accesories</a>
+                    <a href="#">Medical Technology</a>
+                    <a href="#">Assistive Technology</a>
+                    <a href="#">Science</a>
+                    <a href="#">Space</a>
+                    <a href="#">Robotics</a>
+                    <a href="#">AI</a>
+                    <a href="#">SI</a>
+  </div>
+</div>
+             <div class="dropdown">
+                
+             <li class="header"><a href="file:///C:/Users/gm/Documents/Untitled-1.html" target="_blank"> <button class="dropbtn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
+                 <div class="dropdown-content">
+    <a href="#">ByGoogle</a>
+    <a href="#">ByFacebook</a>
+  </div>
+</div>
+            <div class="dropdown">
+             <li class="header" ><a href="file:///C:/Users/gm/Documents/Untitled-2.html" target="_blank"><button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
+             <div class="dropdown-content">
+    <a href="#">ByGoogle</a>
+    <a href="#">ByFacebook</a>
+  </div>
+</div>
             </ul>
         </div>
         </div>
+        
     </nav>
-     <div id="firstContainer" class="container" >
-<div class="jumbotron">
-    
-      <input type="text" name="search">
-        <button type="button" class="btn btn-info">
-          <span class="glyphicon glyphicon-search"></span> Search
-        </button>
-    </div>
-    </div>
-    
-<h1 style="color:white;"  ><center><strong>SBS </strong></center> <center>Group of Technology.</center><br> <center>Be Creative , Be Happy</center></h1>
+</div>
+<h1 style="color:white;"  ><center><strong>SBS </strong></center> <center>Group of Technology.</center> <center>Be Creative , Be Happy</center></h1>
 
 <table class="technology">
       
@@ -205,13 +303,14 @@ color:yellow;
 <td><a href="#T20"> Artificial Intelligence.</a></td>
 <td><a href="#T21"> Superintelligence.</a></td>
   </tr>
-   </table> 
-</div>
-
+    </div>
+    </table>
 <center>
+    
 <h2 style="color:red;" id ="T1"> Technology  </h2></center> <center><p class="T">The use of the term "technology" has changed significantly over the last 200 years. Before the 20th century, the term was uncommon in English, and it was used either to refer to the description or study of the useful arts or to allude to technical education, as in the <a href ="https://www.mit.edu/" target ="_blank">Massachusetts Institute of Technology. </a>(chartered in 1861).<br>
 The term "technology" rose to prominence in the 20th century in connection with the Second Industrial Revolution. The term's meanings changed in the early 20th century when American social scientists, beginning with Thorstein Veblen, translated ideas from the German concept of Technik into "technology." In German and other European languages, a distinction exists between technik and technologie that is absent in English, which usually translates both terms as "technology." By the 1930s, "technology" referred not only to the study of the industrial arts but to the industrial arts themselves.
 </p>
+    </center>
     <div class="container">
     <div class="row">
         <div class="col-sm-4">
@@ -247,6 +346,7 @@ The term "technology" rose to prominence in the 20th century in connection with 
 <img src ="https://www.kinaxis.com/sites/default/files/blog/2015/09/iStock_000049353450_Small.jpg"align ="centre" height = "300px" width = "480px"></marquee>
 <h2 style="color:red;">  Technology Included in our Company.</h2><br>
 <ol>
+    <center>
 <li style="color:white;" id="T2"> <a href ="https://en.wikipedia.org/wiki/Information_technology" target ="_blank">Information Technology </a></li>
 <p>
 Information technology is the study, design, development, implementation, support or management of computer-based information systems—particularly software applications and computer hardware. IT workers help ensure that computers work well for people.</p>
@@ -318,8 +418,10 @@ The design activity of the architect, from the macro-level (urban design, landsc
 <img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuFWyOtle_spL9XITsu5xo4Bocx3nVxPdpPw&usqp=CAU"></p>
 <li style="color:white;"id="T10"> Entertainment & Media </li><p>
 Entertainment technology is the discipline of using manufactured or created components to enhance or make possible any sort of entertainment experience. Because entertainment categories are so broad, and because entertainment models the world in many ways, the types of implemented technology are derived from a variety of sources. Thus, in theatre, for example, entertainment technology practitioners must be able to design and construct scenery, install electrical systems, build clothing, use motors if there is scenery automation,[clarification needed] provide plumbing (if functioning kitchen fixtures are required, or if "singing in the rain"), etc. In this way, the entertainment technology field intersects with most other types of technology.</p>
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2017-03/21/full/1490115831-0498.jpg">
 <li style="color:white;"id="T11"> Art & Music </li><p>
 Music technology is the study or the use of any device, mechanism, machine or tool by a musician or composer to make or perform music; to compose, notate, play back or record songs or pieces; or to analyze or edit music.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2l043U9jCcl_FQt5k5Gbjt8AnlIc_T_PJLA&usqp=CAU">
 <li style="color:white;"id="T12"> Appliances </li><p>
 A home appliance, domestic appliance or household appliance, is a machine which assists in household functions such as cooking, cleaning and food preservation.
 
@@ -329,16 +431,21 @@ small appliances;
 major appliances, or white goods;
 and consumer electronics, or brown goods.
 This categorization is reflected in the maintenance and repair of these types of products. Brown goods typically require high technical knowledge and skills (which get more complex with time, such as going from a soldering iron to a hot-air soldering station), while white goods may need more practical skills and force to manipulate the devices and heavy tools required to repair them.</p>
+    <img src="https://5.imimg.com/data5/BE/TO/MY-7688301/combo-offer-for-kitchen-appliances-and-house-hold-items-500x500.jpg">
 <li style="color:white;"id="T13"> Industrial Machines </li><p>
 he machine industry or machinery industry is a subsector of the industry, that produces and maintains machines for consumers, the industry, and most other companies in the economy.
 <br>
 This machine industry traditionally belongs to the heavy industry. Nowadays, many smaller companies in this branch are considered part of the light industry. Most manufacturers in the machinery industry are called machine factories.</p>
-<li style="color:white;"id="T14"> Clothing &Accessories </li><p>
+    <img src="https://images.unsplash.com/photo-1584275142335-7f7cc7ba6c23?ixlib=rb-1.2.1&w=1000&q=80" width="500" height="300">
+<li style="color:white;"id="T14"> Clothing & Accessories </li><p>
 “Clothes and Fashion Accessories” Vocabulary in English: 100+ Items Illustrated. ... Accessories that are worn may include jackets, boots and shoes, cravats, ties, hats, bonnets, belts and suspenders, gloves, muffs, jewelery, watches, sashes, shawls, scarves, lanyards, socks, and stockings.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpHn4YxMoO3ezq2_qNGtf49BcyeuOeuiKPw&usqp=CAU">
 <li style="color:white;"id="T15"> Medical Technology </li><p>
 "Medical technology can be defined as the application of science to develop solutions to health problems or issues such as the prevention or delay of onset of diseases or the promotion and monitoring of good health.”</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_i8pPdMNkG9GxGrOMUpiFWJ_C3l0InUKBcGp4V4tKlHEklkb3frExXjwlnTTcH89MoI2jO_aVQGJhq2a0pN-AZj1DIoHLNY3w6w&usqp=CAU&ec=45750089">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-Z1GZUyCWzie1Eb613nVG9N53-tugsDj9w&usqp=CAU">
 <li style="color:white;"id="T16"> Assistive Technology </li><p>
-Assistive technology (AT) is any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities.<ul>
+Assistive technology (AT) is any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities.</p><ul>
 <li>AT can be low-tech: communication boards made of cardboard or fuzzy felt.</li>
 <li>AT can be high-tech: special-purpose computers.</li>
 <li>AT can be hardware: prosthetics, mounting systems, and positioning devices.</li>
@@ -347,27 +454,28 @@ Assistive technology (AT) is any item, piece of equipment, software program, or 
 <li>AT can be inclusive or specialized learning materials and curriculum aids.</li>
 <li>AT can be specialized curricular software.</li>
 <li>AT can be much more—electronic devices, wheelchairs, walkers, braces, educational software, power lifts, pencil holders, eye-gaze and head trackers, and much more.</li>
-</ul></p>
+</ul>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStWAaKZKef5HmOSVMTgN4QlVO2R44m-GkgsQoGZEOqULSe6Bm-NyMxmT56OHIu0E17P1m0cy4WYOZaK61wjEnHySF-K-kfuauCdg&usqp=CAU&ec=45750089">
 <br>
 <li style="color:white;"id="T17"> Science </li><p>
 Science (from the Latin word scientia, meaning "knowledge") is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.<br>
 Modern science is typically divided into three major branches that consist of the natural sciences (e.g., biology, chemistry, and physics), which study nature in the broadest sense; the social sciences (e.g., economics, psychology, and sociology), which study individuals and societies; and the formal sciences (e.g., logic, mathematics, and theoretical computer science), which study abstract concepts. There is disagreement, however, on whether the formal sciences actually constitute a science as they do not rely on empirical evidence. Disciplines that use existing scientific knowledge for practical purposes, such as engineering and medicine, are described as applied sciences.</p>
+    <img src="https://www.freshersnow.com/wp-content/uploads/2018/05/Science-Technology.png">
 <li style="color:white;"id="T18"> Space </li><p>
 Space is the boundless three-dimensional extent in which objects and events have relative position and direction. Physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWLSsfAyyuiNJO2ZzI6IgnNebKgAffmLtAQ&usqp=CAU">
 <li style="color:white;"id="T19"> Robotics </li>,<p>
 Robotics is the intersection of science, engineering and technology that produces machines, called robots, that substitute for (or replicate) human actions. Pop culture has always been fascinated with robots. R2-D2. Optimus Prime. WALL-E. These over-exaggerated, humanoid concepts of robots usually seem like a caricature of the real thing...or are they more forward thinking than we realize? Robots are gaining intellectual and mechanical capabilities that don’t put the possibility of a R2-D2-like machine out of reach in the future.<br>
 As technology progresses, so too does the scope of what is considered robotics. In 2005, 90% of all robots could be found assembling cars in automotive factories. These robots consist mainly of mechanical arms tasked with welding or screwing on certain parts of a car. Today, we’re seeing an evolved and expanded definition of robotics that includes the development, creation and use of bots that explore Earth’s harshest conditions, robots that assist law-enforcement and even robots that assist in almost every facet of healthcare.   </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9U3JSk-8ARwI3v2driYBZOQTjap79nlRU2Px17u0IAwJ7Ej8p_GhjpQlljmBo9KOE9hHowqroId7etmEA8YpuYNUhw0WrXwotNg&usqp=CAU&ec=45750089">
 <li style="color:white;" id="T20"> Artificial Intelligence </li><p>
 Artificial intelligence (AI), is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals. Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving".</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-fVJxFRncWbv2Z1Is0vddZUHvL1gCW-f-Iga1a3UeFPwGVGRqD3rVEtL1GdRKr-C1MlnAE24NDNbBGK5N_MS2NIb-iAH-aXt_w&usqp=CAU&ec=45750089">
 <li style="color:white;"id="T21"> Super Intelligence </li><p>
 A superintelligence is a hypothetical agent that possesses intelligence far surpassing that of the brightest and most gifted human minds. "Superintelligence" may also refer to a property of problem-solving systems (e.g., superintelligent language translators or engineering assistants) whether or not these high-level intellectual competencies are embodied in agents that act in the world. A superintelligence may or may not be created by an intelligence explosion and associated with a technological singularity.</p>
-</ol>
-<div class = "header">
-<h3>Direct link to jump topic.</h3>
-</div></center><center>
-
- </center>
-
+        </center> 
+    </ol>
 <table class="table table-striped table-hover">
 <tbody>
 <tr>
@@ -474,11 +582,12 @@ A superintelligence is a hypothetical agent that possesses intelligence far surp
 <th>20 </th>
 <th> Superintelligence </th>
 <th> 4Lakh-20Lakh </th>
-</tr>
+    </tr>
+    </tbody>
 </table>
 <div class ="container">
 <center><h3> Registration Forms</h3></center>
-        <form>
+        <form id="registration">
             <div class ="row">
             <div class ="col-xs-4">
             <label for="Father's Name"> First Name</label>
@@ -620,5 +729,6 @@ A superintelligence is a hypothetical agent that possesses intelligence far surp
     </div>
   </div>
 </section>
+ 
 </body>
 </html>

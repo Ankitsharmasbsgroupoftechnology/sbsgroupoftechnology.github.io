@@ -9,9 +9,29 @@ You can add your own comment.
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
     <link rel="stylesheet" href="css\style.css">
 <style>
+.parallax {
+  /* The image used */
+  background-image: url("https://image.freepik.com/free-vector/blue-technology-background-with-hexagonal-glowing_1017-20584.jpg");
 
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
 strong {
          
          font-size :200px;
@@ -35,14 +55,10 @@ margin: 1em 0;
 }
 
 h1{
-border-width: 23px;
-border-style: groove;
-border-color: blue;
 font-size: 50px;
 text-shadow: 11px 11px 11px black;
 font: bold small-caps bolder 35px arial, sans-serrif ;
-background: url(https://1.bp.blogspot.com/-dgH6iWe92Eg/V_YlbxgdMHI/AAAAAAAAAUw/qHcNVa7IiOETJ7Pi0A2_XNtYnQCcYqIewCLcB/s1600/4K%2BWallpapers%2B2.jpg) ;
-    border-radius: 30px;
+
 }
 h2{
 border-width: 9px;
@@ -180,22 +196,11 @@ color:yellow;
     border-radius: 0px;
         background-color: black;
     }
-    .bg {
-  /* The image used */
-   background-image: url("https://wallpaperaccess.com/full/516010.jpg");
-  /* Full height */
-  height: 100%; 
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
- 
 </style>
 </head>
 <body>
-    <div class="bg">
+    <div class="parallax">
+        <div id="myheader">
     <nav class="navbar navbar-inverse navar-fixed-top">
     <div class="container">
         <div class="navbar-header">
@@ -220,93 +225,52 @@ color:yellow;
             <div class="dropdown">
             <li class="header"><a href="#T1"><button class="dropbtn"><span class="glyphicon glyphicon-new-window"></span>Technology</button></a></li>
                 <div class="dropdown-content">
-                    <a href="#">IT</a>
-                    <a href="#">Networks</a>
-                    <a href="#">Sensors</a>
-                    <a href="#">IOT</a>
-                    <a href="#">Transport</a>
-                    <a href="#">Energy</a>
-                    <a href="#">Agriculture</a>
-                    <a href="#">Architecture</a>
-                    <a href="#">Entertainment and Media</a>
-                    <a href="#">Art and Music</a>
-                    <a href="#">Appiances</a>
-                    <a href="#">Industrial Machines</a>
-                    <a href="#">Clothing and Accesories</a>
-                    <a href="#">Medical Technology</a>
-                    <a href="#">Assistive Technology</a>
-                    <a href="#">Science</a>
-                    <a href="#">Space</a>
-                    <a href="#">Robotics</a>
-                    <a href="#">AI</a>
-                    <a href="#">SI</a>
+                    <a href="#T2">IT</a>
+                    <a href="#T3">Networks</a>
+                    <a href="#T4">Sensors</a>
+                    <a href="#T5">IOT</a>
+                    <a href="#T6">Transport</a>
+                    <a href="#T7">Energy</a>
+                    <a href="#T8">Agriculture</a>
+                    <a href="#T9">Architecture</a>
+                    <a href="#T10">Entertainment and Media</a>
+                    <a href="#T11">Art and Music</a>
+                    <a href="#T12">Appiances</a>
+                    <a href="#T13">Industrial Machines</a>
+                    <a href="#T14">Clothing and Accesories</a>
+                    <a href="#T15">Medical Technology</a>
+                    <a href="#T16">Assistive Technology</a>
+                    <a href="#T17">Science</a>
+                    <a href="#T18">Space</a>
+                    <a href="#T19">Robotics</a>
+                    <a href="#T20">AI</a>
+                    <a href="#T21">SI</a>
   </div>
 </div>
              <div class="dropdown">
                 
-             <li class="header"><a href="file:///C:/Users/gm/Documents/Untitled-1.html" target="_blank"> <button class="dropbtn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
+             <li class="header"><a href="file:///C:/Users/gm/Documents/index.html/Untitled-1.html" target="_blank"> <button class="dropbtn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
                  <div class="dropdown-content">
     <a href="#">ByGoogle</a>
     <a href="#">ByFacebook</a>
   </div>
 </div>
             <div class="dropdown">
-             <li class="header" ><a href="file:///C:/Users/gm/Documents/Untitled-2.html" target="_blank"><button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
+             <li class="header" ><a href="file:///C:/Users/gm/Documents/index.html/Untitled-2.html" target="_blank"><button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
              <div class="dropdown-content">
     <a href="#">ByGoogle</a>
     <a href="#">ByFacebook</a>
   </div>
 </div>
             </ul>
+            </div>
         </div>
-        </div>
-        
     </nav>
-</div>
-<h1 style="color:white;"  ><center><strong>SBS </strong></center> <center>Group of Technology.</center> <center>Be Creative , Be Happy</center></h1>
-
-<table class="technology">
-      
-<div class ="navigation">
-    <tr>
-<td><a href="#T1"> Technology.</a></td>
-<td><a href="#T2"> Information Technology.</a></td>
-<td><a href="#T3"> Networks.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T4"> Sensors.</a></td>
-<td><a href="#T5"> Internet of Things.</a></td>
-<td><a href="#T6"> Transport.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T7"> Energy.</a></td>
-<td><a href="#T8"> Agriculture.</a></td>
-<td><a href="#T9"> Architecture.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T10"> Entertainment & Media.</a></td>
-<td><a href="#T11"> Art & Music.</a></td>
-<td><a href="#T12"> Appliances.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T13"> Industrial Machines.</a></td>
-<td><a href="#T14"> Clothing & Accessories	.</a></td>
-<td><a href="#T15"> Medical Technology.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T16"> Assistive technology.</a></td>
-<td><a href="#T17">Science.</a></td>
-<td><a href="#T18"> Space.</a></td>
-        </tr>
-    <tr>
-<td><a href="#T19"> Robotics.</a></td>
-<td><a href="#T20"> Artificial Intelligence.</a></td>
-<td><a href="#T21"> Superintelligence.</a></td>
-  </tr>
-    </div>
-    </table>
-<center>
-    
+            </div>
+ <div class="centered">
+     <h1 style="color:aliceblue;"  ><center><strong>SBS </strong></center> <center>Group of Technology.</center></h1>
+        </div>
+     </div>  
 <h2 style="color:red;" id ="T1"> Technology  </h2></center> <center><p class="T">The use of the term "technology" has changed significantly over the last 200 years. Before the 20th century, the term was uncommon in English, and it was used either to refer to the description or study of the useful arts or to allude to technical education, as in the <a href ="https://www.mit.edu/" target ="_blank">Massachusetts Institute of Technology. </a>(chartered in 1861).<br>
 The term "technology" rose to prominence in the 20th century in connection with the Second Industrial Revolution. The term's meanings changed in the early 20th century when American social scientists, beginning with Thorstein Veblen, translated ideas from the German concept of Technik into "technology." In German and other European languages, a distinction exists between technik and technologie that is absent in English, which usually translates both terms as "technology." By the 1930s, "technology" referred not only to the study of the industrial arts but to the industrial arts themselves.
 </p>
@@ -687,11 +651,12 @@ A superintelligence is a hypothetical agent that possesses intelligence far surp
 <button class="btn btn-primary  btn-lg" >
 <label for="submit">Submit</label>
 </button>
-    </div>
-        </div>
-</div>
-</center>
+    </center>
+    
+        
 </form>
+    </div>
+    
 <br>
 <section class="text-gray-600 body-font relative">
   <div class="container px-5 py-24 mx-auto">
@@ -729,6 +694,5 @@ A superintelligence is a hypothetical agent that possesses intelligence far surp
     </div>
   </div>
 </section>
- 
 </body>
 </html>

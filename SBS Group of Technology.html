@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<!--
+You can add your own comment.
+-->
+<html>
+<head>
+<title> SBS Group of Tecnology. </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+    <link rel="stylesheet" href="css\style.css">
+<style>
+.parallax {
+  /* The image used */
+  background-image: url("https://png.pngtree.com/thumb_back/fw800/back_pic/03/51/91/165792e7b2368eb.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+    .centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    }
+strong {
+         
+         font-size :150px;
+}
+ b{
+font-size :20px;
+}
+h2{
+font-size :50px;
+}
+li{
+font-size :30px;
+border-width: 9px;
+border-style: ridge;
+border-color:black;
+background-color:orange;
+ border-radius: 30px;
+ border-spacing: inherit;
+    padding-right: .6em;
+margin: 1em 0;
+}
+
+h1{
+font-size: 30px;
+text-shadow: 11px 11px 11px black;
+font: bold small-caps bolder 35px arial, sans-serrif ;
+
+}
+h2{
+border-width: 9px;
+border-style: groove;
+border-color:blue;
+background-color:aqua;
+}
+    h3{
+        font-size :30px;
+    }
+body{
+color:black;
+font-size: 20px;
+    background-color:silver;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8Y7lCzBp-lL-0IcBTk6SAZvb8ac6UZLTW5VqdHEW-c569Tr0ztRgYuMQ66KRZcXwlg1j4SHVoxsG5QTLfQzSa9Qwy7LNTFIYgXw&usqp=CAU&ec=45750089) no-repeat center;
+}
+p{
+font: italicfont small-caps bolder 35px arial, sans-serrif ;
+    border-style: groove;
+    border-width: 5px;
+    border-color: deeppink;
+    border-radius: 25px;
+    background-color: pink;
+}
+img{
+border-width: 5px;
+border-style: groove;
+border-color:yellow;
+    border-radius: 30px;
+}
+*{
+box-sizing:border-box;
+}
+/* Style the header*/
+.header{
+text-align:centre;
+}
+/* Style the top navigation bar
+*/
+.navigation{
+overflow: auto;
+background-color:pink;
+}
+/* Style the  navigation links */
+.navigation a {
+float: left;
+display: white ;
+color: red;
+text-align: center;
+padding: 14px 16px ;
+}
+/* Change color on hover */
+.navigation a:hover {
+background-color:black;
+color: red;
+}
+#background-image{
+float:left;
+}
+table{
+border: 5px solid blue;
+width: 100%;
+}
+th,td{
+border: 5px solid blue;
+    
+}
+form{
+border: 15px solid red;
+    background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Minimalist-Crumpled-Paper-Simple-Background-Image.jpg);
+    border-radius: 25px;
+}
+# background-image
+{
+;
+height:350px;
+color:black;
+}
+a:link {
+color:white;
+}
+a:visited{
+color:green;
+}
+a:hover {
+color:blue;
+}
+a:active {
+color:yellow;
+}
+.technology{
+    background: url(https://cdn.britannica.com/84/203584-050-57D326E5/speed-internet-technology-background.jpg);
+    }
+    section{
+        border: 15px solid blue;
+        background: url(https://img.freepik.com/free-vector/abstract-halftone-background_23-2148583453.jpg?size=626&ext=jpg);
+        border-radius: 25px;
+    }
+    body, html {
+  height: 100%;
+  margin: 0;
+}
+
+
+.dropbtn {
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    border: none;
+    }
+.dropdown {
+    position: relative;
+    display: inline-block;
+    }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    }
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    }
+    .dropdown-content a:hover {background-color: green;}
+    .dropdown:hover .dropdown-content {display: block;}
+    .dropdown:hover .dropbtn {background-color: none;}
+    .header{
+    font-size: 10px;
+    border-radius: 0px;
+        background-color: black;
+    }
+     #clock {
+        font-size: 20px;
+        width: 150px;
+        margin: 0px;
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 20px;
+         color: white;
+        }
+    input.largercheckbox{
+     width: 20px;
+        height: 20px;
+    }
+</style>
+</head>
+<body>
+    <div class="parallax">
+        <div id="myheader">
+    <nav class="navbar navbar-inverse navar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+             
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+        <a href="#" class="navbar-brand"><img src ="https://www.crushpixel.com/big-static13/preview4/creative-idea-concept-light-bulb-1194209.jpg" class=" img-circle" height="50px" width="50px" align="left"> <b>SBS Group of Technology.</b><br><b> Be Creative , Be Happy</b></a><br><br>
+             <div id="clock"></div>
+        <script>
+        setInterval(showTime, 1000); 
+        function showTime() { 
+            let time = new Date(); 
+            let hour = time.getHours(); 
+            let min = time.getMinutes(); 
+            let sec = time.getSeconds(); 
+            am_pm = "PM"; 
+  
+            if (hour > 12) { 
+                hour -= 12; 
+                am_pm = "PM"; 
+            } 
+            if (hour == 0) { 
+                hr = 12; 
+                am_pm = "AM"; 
+            } 
+  
+            hour = hour < 10 ? "0" + hour : hour; 
+            min = min < 10 ? "0" + min : min; 
+            sec = sec < 10 ? "0" + sec : sec; 
+  
+            let currentTime = hour + ":"  
+                + min + ":" + sec + am_pm; 
+  
+            document.getElementById("clock") 
+                .innerHTML = currentTime; 
+        } 
+  
+        showTime(); 
+        </script>   
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+           
+        <ul class="nav navbar-nav navbar-right">
+             <div class="dropdown">
+            <li class="header"><a href="#come"><button class="dropbtn"><span class="glyphicon glyphicon-home"></span> Home</button></a> </li>
+                 <div class="dropdown-content">
+    <a href="#T1">INFORMATION</a>
+           <a href="file:///C:/Users/gm/Documents/index.html/SBS%20Technology%20Store.html" target="_blank">BUY</a>
+    <a href="#registration">TRAINING</a>
+</div>
+                 </div>
+            <div class="dropdown">
+            <li class="header"><a href="#T1"><button class="dropbtn"><span class="glyphicon glyphicon-new-window"></span>Technology</button></a></li>
+                <div class="dropdown-content">
+                    <a href="#T2">IT</a>
+                    <a href="#T3">Networks</a>
+                    <a href="#T4">Sensors</a>
+                    <a href="#T5">IOT</a>
+                    <a href="#T6">Transport</a>
+                    <a href="#T7">Energy</a>
+                    <a href="#T8">Agriculture</a>
+                    <a href="#T9">Architecture</a>
+                    <a href="#T10">Entertainment and Media</a>
+                    <a href="#T11">Art and Music</a>
+                    <a href="#T12">Appiances</a>
+                    <a href="#T13">Industrial Machines</a>
+                    <a href="#T14">Clothing and Accesories</a>
+                    <a href="#T15">Medical Technology</a>
+                    <a href="#T16">Assistive Technology</a>
+                    <a href="#T17">Science</a>
+                    <a href="#T18">Space</a>
+                    <a href="#T19">Robotics</a>
+                    <a href="#T20">AI</a>
+                    <a href="#T21">SI</a>
+  </div>
+</div>
+             <div class="dropdown">
+                
+             <li class="header"><a href="file:///C:/Users/gm/Documents/index.html/Login.html" target="_blank"> <button class="dropbtn"><span class="glyphicon glyphicon-log-in"></span> Login</button></a></li>
+                 <div class="dropdown-content">
+    <a href="#">ByGoogle</a>
+    <a href="#">ByFacebook</a>
+  </div>
+</div>
+            <div class="dropdown">
+             <li class="header" ><a href="file:///C:/Users/gm/Documents/index.html/Sign Up.html" target="_blank"><button class="dropbtn"><span class="glyphicon glyphicon-user"></span> Sign Up</button></a></li>
+             <div class="dropdown-content">
+    <a href="#">ByGoogle</a>
+    <a href="#">ByFacebook</a>
+  </div>
+</div>
+            </ul>
+            </div>
+        </div>
+    </nav>
+            </div>
+ <div class="centered">
+     <center>
+      
+         </center>
+     <h1 style="color:aliceblue;"  ><center><strong>SBS </strong></center> <center>Group of Technology.</center></h1>
+    
+        </div>
+     </div> 
+   
+<h2 style="color:red;" id ="T1"> Technology  </h2></center> <center><p class="T">The use of the term "technology" has changed significantly over the last 200 years. Before the 20th century, the term was uncommon in English, and it was used either to refer to the description or study of the useful arts or to allude to technical education, as in the <a href ="https://www.mit.edu/" target ="_blank">Massachusetts Institute of Technology. </a>(chartered in 1861).<br>
+The term "technology" rose to prominence in the 20th century in connection with the Second Industrial Revolution. The term's meanings changed in the early 20th century when American social scientists, beginning with Thorstein Veblen, translated ideas from the German concept of Technik into "technology." In German and other European languages, a distinction exists between technik and technologie that is absent in English, which usually translates both terms as "technology." By the 1930s, "technology" referred not only to the study of the industrial arts but to the industrial arts themselves.
+</p>
+    </center>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="thumbnail">
+<a href="#T1" class="thumbnail"><img src ="https://www.eetasia.com/wp-content/uploads/sites/2/2020/08/Future_Tech.gif"></a>
+            <div class="caption">
+                <h2>Technology</h2>
+                </div>
+            </div>
+</div>
+        <div class="col-sm-4">
+            <div class="thumbnail">
+<a href="#T19" class="thumbnail">
+<img src = "https://media.tenor.com/images/45f50da9cbb8f211afc1454773a52b82/tenor.gif" ></a>
+                <div class="caption">
+                <h2>Robotics</h2>
+                </div>
+</div>
+ </div>                       
+        <div class="col-sm-4">
+            <div class="thumbnail">
+<a href="#T3" class="thumbnail">
+<img src ="https://images.idgesg.net/images/article/2019/08/cso_nw_promoting_an_idea_lightbulb_technology_gear_by_natali_mis_gettyimages-1024234886_2400x1600-100808095-large.jpg">
+    </a>
+                <div class="caption">
+                <h2>Networks</h2>
+                </div>
+</div>
+            </div>
+        </div>
+        </div>
+<marquee beaviour="scroll" direction="right">
+<img src ="https://www.kinaxis.com/sites/default/files/blog/2015/09/iStock_000049353450_Small.jpg"align ="centre" height = "300px" width = "480px"></marquee>
+<h2 style="color:red;">  Technology Included in our Company.</h2><br>
+<ol>
+    <center>
+<li style="color:white;" id="T2"> <a href ="https://en.wikipedia.org/wiki/Information_technology" target ="_blank">Information Technology </a></li>
+<p>
+Information technology is the study, design, development, implementation, support or management of computer-based information systems—particularly software applications and computer hardware. IT workers help ensure that computers work well for people.</p>
+<p>
+Nearly every company, from a software design firm, to the biggest manufacturer, to the smallest “mom & pop” store, needs information technology workers to keep their businesses running smoothly, according to industry experts.</p>
+<p>
+Most information technology jobs fall into four broad categories: computer scientists, computer engineers, systems analysts and computer programmers. HR managers responsible for recruiting IT employees increasingly must become familiar with the function and titles of the myriad job titles in demand today.</p>
+Some of them are listed below:
+<ul type="square">
+<li>Database administration associate</li>
+<li>Information systems operator/analyst</li>
+<li>Interactive digital media specialist</li>
+<li>Network specialist</li>
+<li>Programmer/analyst</li>
+<li>Software engineer</li>
+<li>Technical support representative</li>
+</ul>
+<img src ="https://www.freestudy.com/wp-content/uploads/2019/08/Best-Free-Online-Information-Technology-Courses.jpg"height = "300px" width = "400px">
+
+<img src ="https://images.idgesg.net/images/article/2018/10/artificial-intelligence_brain_machine-learning_digital-transformation_world-networking-100777429-large.jpg"height = "300px" width = "400px"align ="right">
+<li style="color:white;" id="T3"><a href="https://en.wikipedia.org/wiki/Computer_network" target ="_blank"> Networks</a> </li>
+<p>
+A network is a collection of computers, servers, mainframes, network devices, peripherals, or other devices connected to one another to allow the sharing of data. An example of a network is the Internet, which connects millions of people all over the world. To the right is an example image of a home network with multiple computers and other network devices all connected.</p>
+Examples of network devices:
+<ul>
+<li>Desktop computers, laptops, mainframes, and servers.</li>
+<li>Consoles and thin clients.</li>
+<li>Firewalls</li>
+<li>Bridges</li>
+<li>Repeaters</li>
+<li>Network Interface cards</li>
+<li>Switches, hubs, modems, and routers.</li>
+<li>Smartphones and tablets.</li>
+<li>Webcams</li>
+</ul>
+<img src="https://b8g9x2x5.rocketcdn.me/wp-content/uploads/2018/08/computer-network-laptops2-ss-1920_ejhw62.jpg" height = "400px" width = "400px">
+<img src ="https://i2.wp.com/vividcomm.com/wp-content/uploads/2019/10/service-networks-feat-img.jpg?fit=470%2C470&ssl=1"height = "400px" width = "400px"align ="right">
+<li style="color:white;"id="T4"><a href="https://en.wikipedia.org/wiki/Sensor"target="_blank"> Sensors </a></li>
+<p>
+Sensor is an input device which provides an output (signal) with respect to a specific physical quantity (input).</p>
+<p>
+The term “input device” in the definition of a Sensor means that it is part of a bigger system which provides input to a main control system (like a Processor or a Microcontroller).
+</p>
+<img src ="https://www.electronicshub.org/wp-content/uploads/2017/11/Types-of-Sensors-Featured-Image.jpg">
+<li style="color:white;"id="T5"><a href="https://en.wikipedia.org/wiki/Internet_of_things"> Internet of Things</a> </li>
+<P>
+The Internet of Things, or IoT, refers to the billions of physical devices around the world that are now connected to the internet, all collecting and sharing data. Thanks to the arrival of super-cheap computer chips and the ubiquity of wireless networks, it's possible to turn anything, from something as small as a pill to something as big as an aeroplane, into a part of the IoT. Connecting up all these different objects and adding sensors to them adds a level of digital intelligence to devices that would be otherwise dumb, enabling them to communicate real-time data without involving a human being. The Internet of Things is making the fabric of the world around us more smarter and more responsive, merging the digital and physical universes.</P>
+<img src ="https://miro.medium.com/max/860/1*vUFNgofROTwY_rGd4_7Qsw.jpeg">
+<li style="color:white;"id="T6"><a href="https://builtin.com/transportation-tech"> Transport</a></li>,<p>
+As technologies like AI, data science, manufacturing and deep learning become more advanced, so too will vehicles themselves. These fields act as the backbone for everything from autonomous vehicles to aerospace travel, and even function as the basis for transportation platforms like Uber and Lyft. Because of the enormous potential these technologies hold, transportation technology has become one of the fastest-growing and highly-contested fields in the world. Thousands of startups are racing to create the “next big thing” in the world of transportation. We’ve rounded up a few examples of future transportation technologies below.</p>
+<img src ="https://builtin.com/sites/default/files/styles/ckeditor_optimize/public/inline-images/transportation-technology-pillar-page-overview_0.jpg">
+<li style="color:white;"id="T7"> Energy </li><p>
+In physics, energy is the quantitative property that must be transferred to an object in order to perform work on, or to heat, the object. Energy is a conserved quantity; the law of conservation of energy states that energy can be converted in form, but not created or destroyed. The SI unit of energy is the joule, which is the energy transferred to an object by the work of moving it a distance of 1 metre against a force of 1 newton.</p>
+<img src ="https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fblogs-images.forbes.com%2Fnatalieparletta%2Ffiles%2F2019%2F04%2FAdobeStock_195603050-1200x795.jpeg" height="500px" width="700px">
+<li style="color:white;"id="T8"> Agriculture </li><p>
+Agricultural technology or agrotechnology (abbreviated agritech, AgriTech, or agrotech) is the use of technology in agriculture, horticulture, and aquaculture with the aim of improving yield, efficiency, and profitability. Agricultural technology can be products, services or applications derived from agriculture that improve various input/output processes.<br>
+
+Advances in agricultural science, agronomy, and agricultural engineering have lead to applied developments in agricultural technology.</p>
+<img src ="https://www.innovationnewsnetwork.com/wp-content/uploads/2020/01/Agricultural-technologies-leading-image-696x392.jpg">
+<li style="color:white;"id="T9"> Architecture </li><p>
+Architecture can mean:
+
+A general term to describe buildings and other physical structures.
+The art and science of designing buildings and (some) nonbuilding structures.
+The style of design and method of construction of buildings and other physical structures.
+A unifying or coherent form or structure.
+Knowledge of art, science, technology, and humanity.
+The design activity of the architect, from the macro-level (urban design, landscape architecture) to the micro-level (construction details and furniture). The practice of the architect, where architecture means offering or rendering professional services in connection with the design and construction of buildings, or built environments.
+<img src ="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuFWyOtle_spL9XITsu5xo4Bocx3nVxPdpPw&usqp=CAU"></p>
+<li style="color:white;"id="T10"> Entertainment & Media </li><p>
+Entertainment technology is the discipline of using manufactured or created components to enhance or make possible any sort of entertainment experience. Because entertainment categories are so broad, and because entertainment models the world in many ways, the types of implemented technology are derived from a variety of sources. Thus, in theatre, for example, entertainment technology practitioners must be able to design and construct scenery, install electrical systems, build clothing, use motors if there is scenery automation,[clarification needed] provide plumbing (if functioning kitchen fixtures are required, or if "singing in the rain"), etc. In this way, the entertainment technology field intersects with most other types of technology.</p>
+    <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2017-03/21/full/1490115831-0498.jpg">
+<li style="color:white;"id="T11"> Art & Music </li><p>
+Music technology is the study or the use of any device, mechanism, machine or tool by a musician or composer to make or perform music; to compose, notate, play back or record songs or pieces; or to analyze or edit music.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2l043U9jCcl_FQt5k5Gbjt8AnlIc_T_PJLA&usqp=CAU">
+<li style="color:white;"id="T12"> Appliances </li><p>
+A home appliance, domestic appliance or household appliance, is a machine which assists in household functions such as cooking, cleaning and food preservation.
+
+Appliances are divided into three types:
+
+small appliances;
+major appliances, or white goods;
+and consumer electronics, or brown goods.
+This categorization is reflected in the maintenance and repair of these types of products. Brown goods typically require high technical knowledge and skills (which get more complex with time, such as going from a soldering iron to a hot-air soldering station), while white goods may need more practical skills and force to manipulate the devices and heavy tools required to repair them.</p>
+    <img src="https://5.imimg.com/data5/BE/TO/MY-7688301/combo-offer-for-kitchen-appliances-and-house-hold-items-500x500.jpg">
+<li style="color:white;"id="T13"> Industrial Machines </li><p>
+he machine industry or machinery industry is a subsector of the industry, that produces and maintains machines for consumers, the industry, and most other companies in the economy.
+<br>
+This machine industry traditionally belongs to the heavy industry. Nowadays, many smaller companies in this branch are considered part of the light industry. Most manufacturers in the machinery industry are called machine factories.</p>
+    <img src="https://images.unsplash.com/photo-1584275142335-7f7cc7ba6c23?ixlib=rb-1.2.1&w=1000&q=80" width="500" height="300">
+<li style="color:white;"id="T14"> Clothing & Accessories </li><p>
+“Clothes and Fashion Accessories” Vocabulary in English: 100+ Items Illustrated. ... Accessories that are worn may include jackets, boots and shoes, cravats, ties, hats, bonnets, belts and suspenders, gloves, muffs, jewelery, watches, sashes, shawls, scarves, lanyards, socks, and stockings.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVpHn4YxMoO3ezq2_qNGtf49BcyeuOeuiKPw&usqp=CAU">
+<li style="color:white;"id="T15"> Medical Technology </li><p>
+"Medical technology can be defined as the application of science to develop solutions to health problems or issues such as the prevention or delay of onset of diseases or the promotion and monitoring of good health.”</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_i8pPdMNkG9GxGrOMUpiFWJ_C3l0InUKBcGp4V4tKlHEklkb3frExXjwlnTTcH89MoI2jO_aVQGJhq2a0pN-AZj1DIoHLNY3w6w&usqp=CAU&ec=45750089">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTX-Z1GZUyCWzie1Eb613nVG9N53-tugsDj9w&usqp=CAU">
+<li style="color:white;"id="T16"> Assistive Technology </li><p>
+Assistive technology (AT) is any item, piece of equipment, software program, or product system that is used to increase, maintain, or improve the functional capabilities of persons with disabilities.</p><ul>
+<li>AT can be low-tech: communication boards made of cardboard or fuzzy felt.</li>
+<li>AT can be high-tech: special-purpose computers.</li>
+<li>AT can be hardware: prosthetics, mounting systems, and positioning devices.</li>
+<li>AT can be computer hardware: special switches, keyboards, and pointing devices.</li>
+<li>AT can be computer software: screen readers and communication programs.</li>
+<li>AT can be inclusive or specialized learning materials and curriculum aids.</li>
+<li>AT can be specialized curricular software.</li>
+<li>AT can be much more—electronic devices, wheelchairs, walkers, braces, educational software, power lifts, pencil holders, eye-gaze and head trackers, and much more.</li>
+</ul>
+    
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStWAaKZKef5HmOSVMTgN4QlVO2R44m-GkgsQoGZEOqULSe6Bm-NyMxmT56OHIu0E17P1m0cy4WYOZaK61wjEnHySF-K-kfuauCdg&usqp=CAU&ec=45750089">
+<br>
+<li style="color:white;"id="T17"> Science </li><p>
+Science (from the Latin word scientia, meaning "knowledge") is a systematic enterprise that builds and organizes knowledge in the form of testable explanations and predictions about the universe.<br>
+Modern science is typically divided into three major branches that consist of the natural sciences (e.g., biology, chemistry, and physics), which study nature in the broadest sense; the social sciences (e.g., economics, psychology, and sociology), which study individuals and societies; and the formal sciences (e.g., logic, mathematics, and theoretical computer science), which study abstract concepts. There is disagreement, however, on whether the formal sciences actually constitute a science as they do not rely on empirical evidence. Disciplines that use existing scientific knowledge for practical purposes, such as engineering and medicine, are described as applied sciences.</p>
+    <img src="https://www.freshersnow.com/wp-content/uploads/2018/05/Science-Technology.png">
+<li style="color:white;"id="T18"> Space </li><p>
+Space is the boundless three-dimensional extent in which objects and events have relative position and direction. Physical space is often conceived in three linear dimensions, although modern physicists usually consider it, with time, to be part of a boundless four-dimensional continuum known as spacetime. The concept of space is considered to be of fundamental importance to an understanding of the physical universe. However, disagreement continues between philosophers over whether it is itself an entity, a relationship between entities, or part of a conceptual framework.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaWLSsfAyyuiNJO2ZzI6IgnNebKgAffmLtAQ&usqp=CAU">
+<li style="color:white;"id="T19"> Robotics </li>,<p>
+Robotics is the intersection of science, engineering and technology that produces machines, called robots, that substitute for (or replicate) human actions. Pop culture has always been fascinated with robots. R2-D2. Optimus Prime. WALL-E. These over-exaggerated, humanoid concepts of robots usually seem like a caricature of the real thing...or are they more forward thinking than we realize? Robots are gaining intellectual and mechanical capabilities that don’t put the possibility of a R2-D2-like machine out of reach in the future.<br>
+As technology progresses, so too does the scope of what is considered robotics. In 2005, 90% of all robots could be found assembling cars in automotive factories. These robots consist mainly of mechanical arms tasked with welding or screwing on certain parts of a car. Today, we’re seeing an evolved and expanded definition of robotics that includes the development, creation and use of bots that explore Earth’s harshest conditions, robots that assist law-enforcement and even robots that assist in almost every facet of healthcare.   </p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9U3JSk-8ARwI3v2driYBZOQTjap79nlRU2Px17u0IAwJ7Ej8p_GhjpQlljmBo9KOE9hHowqroId7etmEA8YpuYNUhw0WrXwotNg&usqp=CAU&ec=45750089">
+<li style="color:white;" id="T20"> Artificial Intelligence </li><p>
+Artificial intelligence (AI), is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals. Leading AI textbooks define the field as the study of "intelligent agents": any device that perceives its environment and takes actions that maximize its chance of successfully achieving its goals. Colloquially, the term "artificial intelligence" is often used to describe machines (or computers) that mimic "cognitive" functions that humans associate with the human mind, such as "learning" and "problem solving".</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ-fVJxFRncWbv2Z1Is0vddZUHvL1gCW-f-Iga1a3UeFPwGVGRqD3rVEtL1GdRKr-C1MlnAE24NDNbBGK5N_MS2NIb-iAH-aXt_w&usqp=CAU&ec=45750089">
+<li style="color:white;"id="T21"> Super Intelligence </li><p>
+A superintelligence is a hypothetical agent that possesses intelligence far surpassing that of the brightest and most gifted human minds. "Superintelligence" may also refer to a property of problem-solving systems (e.g., superintelligent language translators or engineering assistants) whether or not these high-level intellectual competencies are embodied in agents that act in the world. A superintelligence may or may not be created by an intelligence explosion and associated with a technological singularity.</p>
+        </center> 
+    </ol>
+<table class="table table-striped table-hover">
+<tbody>
+<tr>
+<th>Serial Number </th>
+<th> Technology Type </th>
+<th> Technology price range(in Rupees) </th>
+</tr>
+<tr>
+<th>1 </th>
+<th> Information Technology  </th>
+<th> 1Lakh-10Lakh </th>
+</tr>
+<tr>
+<th>2 </th>
+<th> Networks  </th>
+<th> 4Lakh-10Lakh </th>
+</tr>
+<tr>
+<th>3 </th>
+<th> Sensors </th>
+<th> 4Lakh-4.5Lakh </th>
+</tr>
+<tr>
+<th>4 </th>
+<th> Internet of Things </th>
+<th> 1Lakh-4Lakh </th>
+</tr>
+<tr>
+<th>5 </th>
+<th> Transport </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>6 </th>
+<th> Energy </th>
+<th> 4Lakh-5Lakh </th>
+</tr>
+<tr>
+<th>7 </th>
+<th> Agriculture </th>
+<th> 2Lakh-10Lakh </th>
+</tr>
+<tr>
+<th>8 </th>
+<th> Architecture </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>9 </th>
+<th> Entertainment & Media </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>10 </th>
+<th> Art & Music </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>11 </th>
+<th> Appliances</th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>12 </th>
+<th> Industrial Machines </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>13 </th>
+<th>Clothing & Accessories </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>14 </th>
+<th> Medical Technology </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>15 </th>
+<th> Assistive technology </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>16 </th>
+<th> Science </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>17 </th>
+<th> Space </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>18 </th>
+<th> Robotics </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>19 </th>
+<th> Artificial Intelligence </th>
+<th> 4Lakh-20Lakh </th>
+</tr>
+<tr>
+<th>20 </th>
+<th> Superintelligence </th>
+<th> 4Lakh-20Lakh </th>
+    </tr>
+    </tbody>
+</table>
+<div class ="container">
+<center><h3> Registration Forms</h3></center>
+        <form id="registration">
+            <div class ="row">
+            <div class ="col-xs-4">
+            <label for="Father's Name"> First Name</label>
+            <input type ="text" class="form-control" name="first-name"  ></div>
+                <div class ="col-xs-4">
+            <label for="Father's Name"> Last Name</label>
+            <input type ="text" class="form-control" name="first-name"   ></div>
+<div class ="col-xs-4">
+            <label for="Email"> E-mail</label>
+            <input type ="text" class="form-control" name="first-name"   ></div>
+            </div>
+            <br><br>
+  <div class ="row">
+            <div class ="col-xs-4">
+            <label for="Father's Name"> Father's Name</label>
+            <input type ="text" class="form-control" name="first-name"  ></div>
+                <div class ="col-xs-4">
+            <label for="Father's Name"> Mother's Name</label>
+            <input type ="text" class="form-control" name="first-name"   ></div>
+<div class ="col-xs-4">
+            <label for="Email"> Password</label>
+            <input type ="password" class="form-control" name="first-name"   ></div>
+            </div>
+    <br><br>
+              <div class ="row">
+            <div class ="col-xs-4">
+            <label for="Father's Name"> Mobile Number</label>
+            <input type ="number" class="form-control"   ></div>
+                <div class ="col-xs-4">
+            <label for="Father's Name"> Father's Number</label>
+            <input type ="number" class="form-control"  ></div>
+<div class ="col-xs-4">
+            <label for="Email"> Mother's Number</label>
+            <input type ="number" class="form-control"    ></div>
+            </div>
+            <br>
+             <div class ="row">
+            <div class ="col-xs-4">
+<label for="gender">Male</label>
+                <input type ="radio" name="gender-male" value="choice-1"></div>
+            <div class ="col-xs-4">
+<label for="gender">Female</label>
+                <input type ="radio" name="gender-male" value="choice-2"></div>
+            <div class ="col-xs-4">
+<label for="gender">Others</label>
+<input type ="radio" name="gender-male" value="choice-3"></div>
+</div>  <br>
+            <div class="row">
+      <div class ="col-xs-4">      
+            Age
+            <select class="form-control">
+            <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+                <option>46</option>
+                <option>47</option>
+                <option>48</option>
+                <option>49</option>
+                <option>50</option>
+            </select>
+          </div>
+          <div class="col-xs-4">
+          
+          <label for="birthday">Birthday</label>
+  <input type="date" id="birthday" name="birthday">
+          
+              </div>
+          
+       
+            </div>   
+            <br><br>
+<center>
+<input type ="checkbox" class="largercheckbox" name="Submit" >
+<label for="submit">I agree to all the statement.</label>
+<br>
+<button class="btn btn-primary  btn-lg" >
+<label for="submit">Submit</label>
+</button>
+    </center>
+    
+        
+</form>
+    </div>
+    
+<br>
+<section class="text-gray-600 body-font relative">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-12">
+      <h3 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Contact Us</h3>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Whatever canditate has problem or any question can contact us easily.</p>
+    </div>
+    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+      <div class="flex flex-wrap -m-2">
+        <div class="row">
+          <div class="col-xs-6">
+            <label for="name" class="leading-7 text-sm text-gray-600">Name</label>
+            <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+          <div class="col-xs-6">
+            <label for="email" class="leading-7 text-sm text-gray-600">Email</label>
+            <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+          </div>
+        </div>
+          <br><br>
+          <div class="relative">
+              <center>
+            <label for="message" class="leading-7 text-sm text-gray-600">Message</label>
+             <textarea id="message" name="message" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"></textarea></center>
+          </div>
+          <center>
+          <button class="btn-primary">Submit</button></center>
+        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+          <a class="text-indigo-500">ankit.sharma722327@gmail.com</a>
+          <p class="leading-normal my-5">Plot no.37 Flat no.S1 
+            <br>Janakpuri , Sahibabad , Ghaziabad , Uttar Pradesh (U.P)
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+</body>
+</html>
